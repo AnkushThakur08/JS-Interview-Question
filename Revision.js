@@ -101,17 +101,44 @@
 // console.log(elementOccurence(arr, element));
 
 /* TODO: Element Occurence of all the elements */
-const arr = [40, 50, 70, 20, 10, 60, 5, 3, 78, 56, 40, 40, 40];
-const count = {};
+// const arr = [40, 50, 70, 20, 10, 60, 5, 3, 78, 56, 40, 40, 40];
+// const count = {};
 
-for (i = 0; i < arr.length; i++) {
-  let element = arr[i];
+// for (i = 0; i < arr.length; i++) {
+//   let element = arr[i];
 
-  if (count[element]) {
-    count[element]++;
-  } else {
-    count[element] = 1;
-  }
-}
+//   if (count[element]) {
+//     count[element]++;
+//   } else {
+//     count[element] = 1;
+//   }
+// }
 
-console.log(count);
+// console.log(count);
+
+/* TODO: Captilize String */
+// const str = "ankush thakur is a good man";
+
+// const strArray = str.split(" ");
+
+// // console.log(strArray);
+// strArray.map((item) => console.log(item[0].toUpperCase() + item.substring(1)));
+
+// const strArray = ["ankush thakur", "physic wallah", "wits innovations"];
+
+// strArray.map((item) => {
+//   const splittedArray = item.split(" ");
+//   splittedArray.map((item) => console.log(item[0].toUpperCase() + item.substring(1)));
+// });
+
+/* TODO: Wheter text is palindrome or not */
+
+const isPalindrome = (str) => {
+  const cleanstring = str.toLowerCase();
+
+  return cleanstring === cleanstring.split("").reverse().join("");
+};
+
+console.log(isPalindrome("ChrOme"));
+console.log(isPalindrome("ankush"));
+console.log(isPalindrome("11 1"));
